@@ -183,6 +183,7 @@ body {
 
 .gallery-item img {
     max-width: 100%;
+    width: 100%;
     box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.6);
 }
 </style>
