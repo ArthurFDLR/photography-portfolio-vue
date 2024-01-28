@@ -4,7 +4,6 @@
             class="gallery"
             :settings="gallerySettings"
             :onInit="onInit"
-            :onBeforeSlide="onBeforeSlide"
         >
             <div
                 v-for="(galleryRow, rowIndex) in galleryGrid"
@@ -78,10 +77,6 @@ export default defineComponent({
     methods: {
         onInit: (detail: InitDetail) => {
             lightGallery = detail.instance;
-            console.log("LightGallery initialized", lightGallery);
-        },
-        onBeforeSlide: (detail: InitDetail) => {
-            console.log("Slide changed", detail);
         },
         updateRatio(
             event: Event,
