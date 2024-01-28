@@ -1,8 +1,8 @@
 <template>
-    <div class="home">
-        <h1>Galleries</h1>
+    <section class="home">
+        <h1>Photography</h1>
         <GalleriesNavigation />
-    </div>
+    </section>
 </template>
 
 <script lang="ts">
@@ -11,7 +11,7 @@ import { defineComponent } from "vue";
 import GalleriesNavigation from "@/components/GalleriesNavigation.vue";
 
 export default defineComponent({
-    name: "HomeView",
+    name: "NavigationView",
     components: {
         GalleriesNavigation,
     },
@@ -19,16 +19,17 @@ export default defineComponent({
 </script>
 
 <style>
-nav {
-    padding: 30px;
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-nav a {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-    color: #42b983;
+.home h1 {
+    font-size: 3.5rem;
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-align: left;
 }
 </style>

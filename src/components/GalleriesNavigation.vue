@@ -1,15 +1,18 @@
 <template>
-    <div class="navigation">
-        <nav>
-            <router-link
-                v-for="gallery in galleries"
-                :key="gallery.path"
-                :to="`/gallery/${gallery.path}`"
-            >
-                {{ gallery.title }}
+    <nav class="navigation">
+        <div
+            v-for="gallery in galleries"
+            :key="gallery.path"
+            class="image-card"
+        >
+            <router-link :to="`/gallery/${gallery.path}`">
+                <img :src="gallery.cover" :alt="gallery.title" />
+                <div class="label">
+                    {{ gallery.title }}
+                </div>
             </router-link>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </template>
 
 <script lang="ts">
@@ -31,16 +34,32 @@ export default defineComponent({
 </script>
 
 <style>
-nav {
-    padding: 30px;
+.navigation {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
 }
 
-nav a {
-    font-weight: bold;
-    color: #2c3e50;
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.6);
+    aspect-ratio: 4/5;
+    object-fit: cover;
 }
 
-nav a.router-link-exact-active {
-    color: #42b983;
+.label {
+    width: 100%;
+    padding: 25px 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
 }
 </style>
