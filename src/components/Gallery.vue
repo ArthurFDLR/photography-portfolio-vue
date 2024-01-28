@@ -1,35 +1,46 @@
 <template>
-    <lightgallery
-        class="gallery"
-        :settings="gallerySettings"
-        :onInit="onInit"
-        :onBeforeSlide="onBeforeSlide"
-    >
-        <div
-            v-for="(galleryRow, rowIndex) in items"
-            :key="rowIndex"
-            class="gallery-row"
+    <div v-if="galleryGrid.length > 0">
+        <lightgallery
+            class="gallery"
+            :settings="gallerySettings"
+            :onInit="onInit"
+            :onBeforeSlide="onBeforeSlide"
         >
-            <a
-                v-for="(galleryItem, itemIndex) in galleryRow"
-                :data-src="galleryItem.src"
-                :key="itemIndex"
-                class="gallery-item"
-                :style="`--r: ${galleryItem.ratio}`"
-                :data-lg-size="galleryItem.size"
-                :data-sub-html="galleryItem.subHtml"
+            <div
+                v-for="(galleryRow, rowIndex) in galleryGrid"
+                :key="rowIndex"
+                class="gallery-row"
             >
-                <img
-                    className="img-responsive"
-                    :src="galleryItem.thumb"
-                    @load="updateRatio($event, galleryItem, galleryRow.length)"
-                />
-            </a>
-        </div>
-    </lightgallery>
+                <a
+                    v-for="(galleryItem, itemIndex) in galleryRow"
+                    :data-src="galleryItem.srcHigh"
+                    :key="itemIndex"
+                    class="gallery-item"
+                    :style="`--r: ${galleryItem.ratio}`"
+                    :data-lg-size="galleryItem.size"
+                    :data-sub-html="galleryItem.subHtml"
+                >
+                    <img
+                        className="img-responsive"
+                        :src="galleryItem.srcMedium"
+                        @load="
+                            updateRatio($event, galleryItem, galleryRow.length)
+                        "
+                    />
+                </a>
+            </div>
+        </lightgallery>
+    </div>
+    <div v-else>
+        <p>Gallery not found</p>
+    </div>
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
+
+import { GalleriesWrapper, GalleryItem } from "@/utils/galleriesWrapper";
+
 import Lightgallery from "lightgallery/vue";
 import { InitDetail } from "lightgallery/lg-events";
 
@@ -39,27 +50,21 @@ import lgFullscreen from "lightgallery/plugins/fullscreen";
 import lgAutoplay from "lightgallery/plugins/autoplay";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 
-// import ExifReader from "exifreader";
-
-import galeryItems from "@/assets/gallery-items.json";
-
 let lightGallery = null;
 
-interface GalleryItem {
-    src: string;
-    thumb: string;
-    ratio?: number;
-    size?: string;
-    subHtml?: string;
-}
-
-export default {
-    name: "App",
+export default defineComponent({
+    name: "PhotoGallery",
     components: {
         Lightgallery,
     },
+    props: {
+        galleryKey: {
+            type: String,
+            required: true,
+        },
+    },
     data: () => ({
-        items: galeryItems as GalleryItem[][],
+        // items: galeryItems as GalleryItem[][],
         gallerySettings: {
             speed: 350,
             plugins: [lgHash, lgZoom, lgFullscreen, lgAutoplay, lgThumbnail],
@@ -68,36 +73,16 @@ export default {
             mousewheel: true,
             thumbMargin: 5,
         },
+        galleryGrid: [] as GalleryItem[][],
     }),
     methods: {
         onInit: (detail: InitDetail) => {
             lightGallery = detail.instance;
             console.log("LightGallery initialized", lightGallery);
         },
-        onBeforeSlide: () => {
-            console.log("calling before slide");
+        onBeforeSlide: (detail: InitDetail) => {
+            console.log("Slide changed", detail);
         },
-        // loadImage(galleryItem) {
-        //     fetch(galleryItem.src)
-        //         .then((response) => response.blob())
-        //         .then((blob) => {
-        //             // Create a Blob URL for the image
-        //             galleryItem.blobUrl = URL.createObjectURL(blob);
-
-        //             // Read EXIF data
-        //             ExifReader.load(blob, { expanded: true })
-        //                 .then((tags) => {
-        //                     console.log(tags);
-        //                     // Process EXIF data here
-        //                 })
-        //                 .catch((error) => {
-        //                     // Handle error for EXIF extraction
-        //                 });
-        //         })
-        //         .catch((error) => {
-        //             // Handle error for image fetching
-        //         });
-        // },
         updateRatio(
             event: Event,
             galleryItem: GalleryItem,
@@ -111,27 +96,14 @@ export default {
                 galleryRowLength === 1
                     ? 1
                     : img.naturalWidth / img.naturalHeight;
-
-            // Read the EXIF data
-            // WARNING - This loads the image again, so it's very not efficient
-            // ExifReader.load(img.src, { async: true })
-            //     .then(function (tags) {
-            //         console.log(tags);
-            //     })
-            //     .catch(function (error) {
-            //         // Handle error.
-            //     });
         },
     },
-    // created() {
-    //     this.items.forEach((galleryRow) => {
-    //         galleryRow.forEach((galleryItem) => {
-    //             this.loadImage(galleryItem);
-    //         });
-    //     });
-    // },
-};
+    mounted() {
+        this.galleryGrid = GalleriesWrapper.getGalleryGrid(this.galleryKey);
+    },
+});
 </script>
+
 <style lang="css">
 @import "lightgallery/css/lightgallery.css";
 @import "lightgallery/css/lg-zoom.css";

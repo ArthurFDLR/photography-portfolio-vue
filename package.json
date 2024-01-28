@@ -12,13 +12,15 @@
     "exifreader": "^4.20.0",
     "firebase": "^10.7.2",
     "lightgallery": "^2.7.2",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",

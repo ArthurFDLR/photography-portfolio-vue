@@ -1,0 +1,67 @@
+[
+    {
+        "path": "big-sur",
+        "title": "Big Sur",
+        "cover": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-1.avif",
+        "grid": [
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-1.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-1.avif"
+                },
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-10.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-10.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-2.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-2.avif"
+                },
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-3.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-3.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-7.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-7.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-4.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-4.avif"
+                },
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-6.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-6.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-8.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-8.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-5.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-5.avif"
+                },
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-9.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-9.avif"
+                }
+            ],
+            [
+                {
+                    "srcHigh": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-11.avif",
+                    "srcMedium": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-11.avif"
+                }
+            ]
+        ]
+    }
+]
