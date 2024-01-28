@@ -7,8 +7,8 @@ export interface GallerySummary {
 }
 
 export interface GalleryItem {
-    srcHigh: string;
-    srcMedium: string;
+    srcMediumRes: string;
+    srcLowRes: string;
     subHtml?: string;
     size?: string;
     ratio?: number;

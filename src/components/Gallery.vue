@@ -13,7 +13,7 @@
             >
                 <a
                     v-for="(galleryItem, itemIndex) in galleryRow"
-                    :data-src="galleryItem.srcHigh"
+                    :data-src="galleryItem.srcMediumRes"
                     :key="itemIndex"
                     class="gallery-item"
                     :style="`--r: ${galleryItem.ratio}`"
@@ -22,7 +22,7 @@
                 >
                     <img
                         className="img-responsive"
-                        :src="galleryItem.srcMedium"
+                        :src="galleryItem.srcLowRes"
                         @load="
                             updateRatio($event, galleryItem, galleryRow.length)
                         "
