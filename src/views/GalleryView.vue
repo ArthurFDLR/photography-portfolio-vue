@@ -28,3 +28,10 @@ export default defineComponent({
     },
 });
 </script>
+
+<style>
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+</style>

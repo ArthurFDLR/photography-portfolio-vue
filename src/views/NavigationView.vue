@@ -30,6 +30,6 @@ export default defineComponent({
     margin-left: 40px;
     font-weight: 700;
     margin-bottom: 70px;
-    text-align: left;
+    text-align: center;
 }
 </style>
