@@ -2,64 +2,64 @@
     {
         "path": "big-sur",
         "title": "Big Sur",
-        "cover": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-6.avif",
+        "cover": "https://photos-r2.arthurfindelair.com/big-sur/web-low-6.avif",
         "grid": [
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-1.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-1.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-1.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-1.avif"
                 },
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-10.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-10.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-10.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-10.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-2.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-2.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-2.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-2.avif"
                 },
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-3.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-3.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-3.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-3.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-7.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-7.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-7.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-7.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-4.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-4.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-4.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-4.avif"
                 },
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-6.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-6.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-6.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-6.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-8.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-8.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-8.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-8.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-5.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-5.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-5.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-5.avif"
                 },
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-9.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-9.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-9.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-9.avif"
                 }
             ],
             [
                 {
-                    "srcMediumRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-medium-11.avif",
-                    "srcLowRes": "https://photography-findelair-public.s3.amazonaws.com/big-sur/web-low-11.avif"
+                    "srcMediumRes": "https://photos-r2.arthurfindelair.com/big-sur/web-medium-11.avif",
+                    "srcLowRes": "https://photos-r2.arthurfindelair.com/big-sur/web-low-11.avif"
                 }
             ]
         ]
